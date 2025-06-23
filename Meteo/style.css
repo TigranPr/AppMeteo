@@ -1,0 +1,49 @@
+/* 🌟 Tema meteo dinamico con CSS moderno */
+:root{--grad-img:linear-gradient(135deg,hsl(200 100% 65%) 0%,hsl(260 100% 65%) 100%);/* Gradiente di sfondo dinamico */
+  animation:skyShift 12s ease-in-out infinite alternate;/* Gradiente cielo dinamico */
+  --grad-sky:linear-gradient(135deg,#51c6ff 0%,#1789ff 100%);/* Gradiente cielo */
+  --grad-dusk:linear-gradient(135deg,#ff7e5f 0%,#feb47b 100%);/* Gradiente tramonto */
+  --grad-night:linear-gradient(135deg,#141E30 0%,#243B55 100%);/* Gradiente notte */
+  --grad-hot:linear-gradient(135deg,#ffae42 0%,#ff7300 100%);/* Gradiente caldo */
+  --grad-fire:linear-gradient(135deg,#ff7300 0%,#ff4500 100%);/* Gradiente fuoco */
+  --grad-rain: linear-gradient(135deg, #6078ea 0%, #17bebb 100%); /* Gradiente pioggia */
+  --grad-ice:linear-gradient(135deg,#4facfe 0%,#00f2fe 100%);/* Gradiente ghiaccio */
+  --radius-lg:20px;--transition:0.25s ease-in-out;} /* Variabili globali per gradienti, animazioni e raggi */
+
+/* Reset di base e struttura */
+*{box-sizing:border-box;margin:0;padding:0} /* Reset CSS */
+body{font-family:'Poppins',sans-serif;min-height:100vh;display:flex;justify-content:center;align-items:center;padding:2rem;background:var(--grad-img);
+  color:#fff;transition:background var(--transition);} /* 🌌 Impostazioni base body */
+
+/* CARD trasparente */
+.card{background:transparent;border-radius:var(--radius-lg);} /* 🪟 Card con bordo arrotondato */
+
+/* Layout griglia generale */
+.app{width:100%;max-width:480px;display:grid;gap:1.5rem;} /* Contenitore principale */
+.app__header{text-align:center;} /* Header centrato */
+.app__title{font-size:2rem;font-weight:600;display:flex;gap:.5rem;justify-content:center;align-items:center;} /* Titolo dell'app con icona */
+
+/* Barra di ricerca */
+.search-bar{display:flex;gap:.6rem;padding:.75rem;background:rgba(255,255,255,0.12);backdrop-filter:blur(10px) saturate(160%);border:1px solid rgba(255,255,255,0.25);
+  border-radius:var(--radius-lg);box-shadow:0 6px 18px rgba(0,0,0,0.15);transition:background .25s ease,box-shadow .25s ease,border-color .25s ease;} /* Effetto vetro + ombre */
+
+/* Effetti hover/focus della barra */
+.search-bar:hover,.search-bar:focus-within{background:rgba(255,255,255,0.18);border-color:rgba(255,255,255,0.5);box-shadow:0 8px 22px rgba(0,0,0,0.25);} /* Effetto al passaggio mouse o focus */
+
+/* Campo input testo */
+.search-bar input{flex:1;padding:.7rem 1rem;border:none;border-radius:var(--radius-lg);background:transparent;color:#fff;font-size:1rem;outline:none;} /* Stile input */
+.search-bar input::placeholder{color:#fff;opacity:1;} /* Placeholder bianco pieno */
+
+/* Pulsante di ricerca */
+.search-bar button{display:flex;align-items:center;justify-content:center;padding:0 .9rem;font-size:1.4rem;border:none;border-radius:var(--radius-lg);
+  background:transparent;color:#fff;cursor:pointer;transition:transform .2s ease;} /* Bottone icona */
+.search-bar button:active{transform:scale(0.92);} /* Piccola animazione al click */
+
+/* Icona meteo */
+.app__icon{display:flex;justify-content:center;height:120px;font-size:6rem;} /* Icona meteo grande centrata */
+
+/* Info meteo */
+.app__info{padding:1rem 1.25rem;display:flex;flex-direction:column;gap:.6rem;} /* Contenitore info meteo */
+.app__info h2{font-size:1.5rem;font-weight:600;text-align:center;margin-bottom:.4rem;} /* Titolo città */
+.app__info p{display:flex;justify-content:space-between;align-items:center;padding:.55rem .9rem;border-radius:var(--radius-lg);font-size:.95rem;} /* Riga info meteo */
+.app__info p span:first-child{opacity:.85;} /* Etichette leggere */
