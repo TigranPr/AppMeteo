@@ -2,11 +2,17 @@
 MeteoFlash è una semplice ma elegante applicazione web che consente di visualizzare in tempo reale le condizioni meteorologiche di una città. Utilizza API pubbliche per ottenere dati meteo aggiornati e cambia dinamicamente lo stile dell'interfaccia in base alle condizioni climatiche.
 
 🚀 Funzionalità principali
+
 🔍 Ricerca meteo per qualsiasi città nel mondo
+
 ☁️ Icona meteo dinamica con Font Awesome
+
 🌡️ Informazioni dettagliate: temperatura, vento, condizione meteo, direzione vento, indice UV, coordinate
+
 🎨 Sfondo dinamico che cambia colore in base al meteo e alla temperatura
+
 🧊 Effetto vetro sulla barra di ricerca con blur e trasparenza
+
 📱 Responsive design: ottimizzato per mobile e desktop
 
 🛠️ Tecnologie utilizzate
