@@ -17,29 +17,32 @@ MeteoFlash è una semplice ma elegante applicazione web che consente di visualiz
 
 🛠️ Tecnologie utilizzate
 
-HTML5 – Struttura della pagina
+- HTML5 – Struttura della pagina
 
-CSS3 (con variabili e gradienti) – Design e transizioni dinamiche
+- CSS3 (con variabili e gradienti) – Design e transizioni dinamiche
 
-JavaScript (vanilla) – Gestione della logica e fetch API
+- JavaScript (vanilla) – Gestione della logica e fetch API
 
-Font Awesome 6.5 – Icone meteo animate
+- Font Awesome 6.5 – Icone meteo animate
 
-Open-Meteo API – Dati meteo aggiornati
+- Open-Meteo API – Dati meteo aggiornati
 
-OpenStreetMap Nominatim API – Geocoding per ottenere coordinate da nome città
+- OpenStreetMap Nominatim API – Geocoding per ottenere coordinate da nome città
 
 🧠 Cosa ho imparato
 
-Integrazione tra API REST pubbliche e interfaccia utente
+- Integrazione tra API REST pubbliche e interfaccia utente
 
-Manipolazione del DOM con JavaScript vanilla
+- Manipolazione del DOM con JavaScript vanilla
 
-Creazione di gradienti dinamici e design responsive
+- Creazione di gradienti dinamici e design responsive
 
-Utilizzo di effetti CSS avanzati come backdrop-filter e blur
+- Utilizzo di effetti CSS avanzati come backdrop-filter e blur
 
 📌 Possibili miglioramenti futuri
-Salvataggio cronologia città cercate
-Visualizzazione previsioni per i prossimi giorni
-Grafico UV o temperatura oraria
+
+- Salvataggio cronologia città cercate
+
+- Visualizzazione previsioni per i prossimi giorni
+
+- Grafico UV o temperatura oraria
